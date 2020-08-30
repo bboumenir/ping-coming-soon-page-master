@@ -1,0 +1,152 @@
+* {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body , html {
+   width: 100%;
+   height: 100%;
+   font-family: 'Libre Franklin', sans-serif;
+}
+
+h1 , h2 , p{
+	text-align: center;
+}
+
+footer {
+	margin: 3rem;
+}
+
+#logo {
+	max-width: 5rem;
+	display: block;
+    margin: 3rem auto;
+} 
+#title {
+    font-weight: 200;
+    color: #A0A0A0;
+}
+
+h2 {
+	font-size: 1rem;
+	font-weight: 200;
+	margin: 1rem;
+	color: #808080;
+}
+
+#myForm {
+	display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+#inside-form {
+	
+}
+
+#mail {
+    width: 20rem;
+	padding: 10px 20px;
+	border-radius: 20px;
+	border : 1px solid #e1e1e1;
+	font-size: 0.8rem;
+}
+
+#mail::placeholder{
+	color: #e1e1e1;
+}
+
+#mail:focus {
+	outline: none;
+	border :#6055a5 solid 1px;
+}
+
+#button {
+
+	width: 8rem;
+	height: 36px;
+	padding:5px 10px;
+	border-radius: 20px;
+	margin-left: 0.5rem;
+	border : none;
+	font-size: 0.8rem;
+	color: white;
+	background-color: hsl(223, 87%, 63%);
+	box-shadow: 0px 5px 11px 0px rgba(203,201,224,1);
+	cursor: pointer;
+	transition-duration: 2000;
+
+}
+
+#button:hover {
+	opacity: 0.6;
+}
+
+#button:focus {
+	outline: none;	
+}
+
+#illustration {
+    display: block;
+    margin: 3rem auto 4rem auto;
+	max-width: 30rem;
+}
+#social {
+	text-align: center;
+	margin: 1.5rem ;
+	font-size: 1.2rem;
+	
+}
+
+i:hover {
+	font-size: 1.2rem;
+	padding: 0.2rem;
+	background-color: hsl(223, 87%, 63%);
+	color: white;
+	border-radius: 60%;
+	border:none;
+}
+
+i {
+	margin: 0 0.5rem;
+	color: hsl(223, 87%, 63%);
+	cursor: pointer;
+}
+
+#copyright {
+	font-size: 0.6rem;
+	color: #e1e1e1;
+}
+
+#error {
+	text-align: left;
+	margin-left: 0.5rem;
+	padding: 0.5rem;
+	font-size: 0.7rem;
+	font-style: italic;
+	color: red;
+}
+
+@media only screen and (max-width: 700px) {
+  #myForm {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem auto;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #error {
+    text-align: center;
+    margin-bottom:  0.8rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #button {
+    width: 20rem;
+  }
+}
